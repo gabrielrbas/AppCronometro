@@ -1,5 +1,50 @@
 body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'VT323';
+    font-size: 10em;
+    font-weight: bold;
     background-image: url("imagens/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    cursor: default;
 }
+
+#conteudo {
+    margin: 10% auto;    
+    padding: 10px;
+    background-color: #353535;    
+    width: 920px;
+    height: 50%;
+}
+
+#cronometro {
+    text-align: center;
+    color: #FFF;
+    
+}
+
+#botoes {
+    text-align: center;
+}
+
+#botoes button {
+    cursor: pointer;
+    background-color: #FFF;
+    width: 250px;
+    height: 80px;
+    font-size: 0.3em;
+    font-family: 'VT323';
+}
+
+#botoes button:hover {
+    background-color: #000;
+    color: #FFF;
+}
+
+#botoes button:disabled, #botoes button:disabled:hover {
+    background-color: #808080;
+    color: #696969;  
+    cursor: not-allowed;
+}
+
