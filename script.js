@@ -17,6 +17,7 @@ var numeros = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09",
 
 var tempo = numeros[horas] + ":" + numeros[minutos] + ":" + numeros[segundos] + ":" + numeros[milisegundos]
 var contarTempo;
+var mudaClasse = document.getElementById("conteudo")
 
 // ***** Botoes *****
 
@@ -53,6 +54,7 @@ function paginaCronometro() {
 }
 
 function iniciarTempo() {
+    mudaClasse.className = "conteudoB"
     document.getElementById("botaoIniciar").remove()
     document.getElementById("botaoZerar").remove()
     document.getElementById("botoes").appendChild(botaoParar)
@@ -80,6 +82,7 @@ function iniciarTempo() {
 }
 
 function pararTempo() {
+    mudaClasse.className = "conteudoA"
     document.getElementById("botaoParar").remove()
     document.getElementById("botaoZerar").remove()
     document.getElementById("botoes").appendChild(botaoIniciar)

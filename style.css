@@ -12,10 +12,17 @@ body {
 
 #conteudo {
     margin: 10% auto;    
-    padding: 10px;
-    background-color: #353535;    
+    padding: 10px;    
     width: 920px;
     height: 50%;
+}
+
+.conteudoA {
+    background-color: #353535;    
+}
+
+.conteudoB {
+    background-color: #307ce0;    
 }
 
 #cronometro {
