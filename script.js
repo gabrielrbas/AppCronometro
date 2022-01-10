@@ -1,7 +1,7 @@
-var horas        = 0
-var minutos      = 0
-var segundos     = 0
-var milisegundos = 0
+var horas        = 10
+var minutos      = 6
+var segundos     = 43
+var milisegundos = 22
 
 var numeros = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09",
                "10", "11", "12", "13", "14", "15", "16", "17", "18", "19",
@@ -63,7 +63,14 @@ function pararTempo() {
 }
 
 function zerarTempo() {
+    horas        = 0
+    minutos      = 0
+    segundos     = 0
+    milisegundos = 0    
     
+    tempo = numeros[horas] + ":" + numeros[minutos] + ":" + numeros[segundos] + ":" + numeros[milisegundos]  
+
+    paginaCronometro()
 }
 
 paginaCronometro()
